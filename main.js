@@ -1,7 +1,10 @@
 
 
 document.addEventListener('DOMContentLoaded', function () {
-
+    let loader = document.querySelector('.loader');
+    window.addEventListener('load', function () {
+        loader.style.display = 'none';
+    });
 
     let header_nav = document.querySelector('.header-nav');
     let lastScrollTop = 0;
